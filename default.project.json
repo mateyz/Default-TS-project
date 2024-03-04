@@ -1,0 +1,75 @@
+{
+	"name": "USCMC-TACPAD",
+	"globIgnorePaths": [
+		"**/package.json",
+		"**/tsconfig.json"
+	],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out/server"
+			}
+		},
+		"ReplicatedStorage": {
+			"$ignoreUnknownInstances": true,
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": {
+						"$path": "node_modules/@rbxts"
+					}
+				},
+				"TS": {
+					"$path": "out/shared"
+				}
+			},
+			"assets": {
+				"$path": "./assets/storage"
+			},
+			"shared": {
+				"$path": "./out/shared"
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"$path": "out/client"
+			}
+		},
+		"Lighting": {
+			"$ignoreUnknownInstances": true,
+			"$className": "Lighting",
+			"$properties": {
+				"Technology": "Future",
+				"TimeOfDay": "14"
+			},
+			"$path": "Assets/Lighting"
+		},
+		"MaterialService": {
+			"$className": "MaterialService",
+			"$path": "Assets/Materials"
+		},
+		"Workspace": {
+			"$ignoreUnknownInstances": true,
+			"$className": "Workspace",
+			"$path": "assets/Map"
+		},
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		}
+	}
+}

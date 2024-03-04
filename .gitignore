@@ -1,0 +1,10 @@
+/node_modules
+/out
+/include
+
+package-lock.json
+
+*.tsbuildinfo
+*.rbxlx
+*.rbxl
+*.lock
