@@ -28,7 +28,7 @@ Keep your game running smoothly with Reflex. Sync game state effortlessly across
 
 Easily facilitate communication with Remo. This lightweight library streamlines networking tasks, enabling you to concentrate solely on extraordinary AAAA games.
 
-### ProfileService
+### ProfileService | Datastore Management
 
 Manage player profiles seamlessly with ProfileService. This versatile module simplifies the process of storing and retrieving player data, allowing you to create personalized experiences for your players.
 

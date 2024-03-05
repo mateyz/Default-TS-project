@@ -29,6 +29,7 @@
     "@rbxts/flipper": "^2.0.1",
     "@rbxts/lapis": "^0.2.9",
     "@rbxts/pretty-react-hooks": "^0.3.3",
+    "@rbxts/profileservice": "^1.4.2",
     "@rbxts/react-reflex": "^0.2.0",
     "@rbxts/react-roblox": "^0.2.0",
     "@rbxts/react-ts": "^1.0.1",
