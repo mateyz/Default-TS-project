@@ -1,0 +1,52 @@
+name: DEPLOY-PROD
+
+on:
+  push:
+    tags:
+    - 'v*'
+
+jobs:
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+
+    # Install Node.js
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    # Install Roblox-TS
+    - name: Install Roblox-TS
+      run: |
+        npm i roblox-ts@2.0.4
+    
+    # Install NPM Dependencies
+    - name: Install NPM dependencies
+      run: npm i
+
+    # Install aftman Dependencies
+    - uses: ok-nick/setup-aftman@v0.3.0
+
+    # Compile the ts code
+    - name: Compile Source Files
+      run: npx rbxtsc --verbose
+
+    # Build rbxl with rojo
+    - run: rojo build -o game.rbxl
+
+    # Publish
+    - name: Publish
+      shell: bash
+      env:
+        UID: 0                                # Universe ID
+        PID: 0                                # Place ID
+        API_KEY: ${{ secrets.PROD_API_KEY }} # API Key (keep this in your GitHub Repository Secrets)
+        FILE: game.rbxl                      # Roblox place file 
+
+      run: rbxcloud experience publish -a "$API_KEY" -u "$UID" -p "$PID" -t published -f "$FILE"
