@@ -2,13 +2,44 @@
 <h1 align="center">Welcome to the Default TS_ROBLOX Project</h1>
 <h2 align="center">TypeScript | React | Reflex</h2>
 
-<p align="center">Your ultimate starting point for game development on ROBLOX!</p>
+<p align="center">Your ultimate starting point for TypeScript driven game development on ROBLOX!</p>
 
 ---
 
 ## 🚀 Get Started
 
 Welcome to the Default TS_ROBLOX Project! This is your launchpad for creating amazing games on the ROBLOX platform. Whether you're a seasoned developer or just starting out, this project has everything you need to bring your ideas to life.
+
+### Setup guide
+<details>
+  <summary></summary>
+  For beginners, setting up a RBX-TS project can be confusing and offputting. This small section will help you... 
+  <ul>
+    <li>
+    Setup your environment.
+    </li>
+    <li>
+    Transpile your TS to Lua.
+    </li>
+    <li>
+    Build your game.
+    </li>
+  </ul>
+
+  ### Tools required
+  1. Rojo - Studio / VSC sync
+  2. Visual studio code - Lightweight IDE 
+  3. Node package manager (npm)
+  4. Aftman - Package manager (?)
+
+
+  ### Some TypeScript
+  ```ts
+  function logSomething(something) {
+    console.log('Something', something);
+  }
+  ```
+</details>
 
 ## 🛠️ Tools
 
