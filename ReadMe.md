@@ -2,7 +2,7 @@
 <h1 align="center">Welcome to the Default TS_ROBLOX Project</h1>
 <h2 align="center">TypeScript | React | Reflex</h2>
 
-<p align="center">Your ultimate starting point for game development on ROBLOX!</p>
+<p align="center">Your ultimate starting point for TypeScript driven game development on ROBLOX!</p>
 
 ---
 
@@ -12,7 +12,7 @@ Welcome to the Default TS_ROBLOX Project! This is your launchpad for creating am
 
 ### Setup guide
 <details>
-  <summary>Click to view</summary>
+  <summary></summary>
   For beginners, setting up a RBX-TS project can be confusing and offputting. This small section will help you... 
   <ul>
     <li>
@@ -33,8 +33,8 @@ Welcome to the Default TS_ROBLOX Project! This is your launchpad for creating am
   4. Aftman - Package manager (?)
 
 
-  ### Some Javascript
-  ```js
+  ### Some TypeScript
+  ```ts
   function logSomething(something) {
     console.log('Something', something);
   }
