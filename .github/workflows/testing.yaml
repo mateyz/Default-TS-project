@@ -1,0 +1,16 @@
+
+name: Request dashboard update
+  
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: INIT WORKFLOW - Dispatch init event to REMOTE repository
+        run: |
+          curl -X POST https://api.github.com/repos/mateyz/GHA_Testing/dispatches \
+          -H 'Accept: application/vnd.github.everest-preview+json' \
+          -u ${{ secrets.GIT_SECRET }} \
+          --data '{"event_type": "update-testing", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
